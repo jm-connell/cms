@@ -3,6 +3,12 @@
     <div class="row">
       <div class="col-xs-12">
         <h2 style="display: inline-block">{{ contact.name }}</h2>
+        <img
+          [src]="contact.imageUrl"
+          alt="{{ contact.name }}"
+          class="img-responsive pull-right"
+          style="max-height: 80px; margin-top: 15px"
+        />
         <div style="display: flex; justify-content: flex-end">
           <a
             href="#"
