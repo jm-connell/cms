@@ -1,1 +1,29 @@
-<p>contact-detail works!</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 style="display: inline-block">{{ contact.name }}</h2>
+        <div style="display: flex; justify-content: flex-end">
+          <a
+            href="#"
+            class="btn btn-primary"
+            role="button"
+            style="margin-top: 15px"
+            >Edit</a
+          >
+          <a
+            href="#"
+            class="btn btn-danger"
+            role="button"
+            style="margin-top: 15px; margin-left: 5px"
+            >Delete</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="row col-xs-12">Email: {{ contact.email }}</div>
+      <div class="row col-xs-12">Phone: {{ contact.phone }}</div>
+    </div>
+  </div>
+</div>
